@@ -1,0 +1,101 @@
+.book-event {
+  padding: 100px 10%;
+  background: radial-gradient(circle at top left, #120016, #000);
+  text-align: center;
+  color: #fff;
+  font-family: "Audiowide", sans-serif;
+}
+
+.book-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 0, 200, 0.3);
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 0 30px rgba(255, 0, 200, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.book-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(255, 0, 200, 0.3);
+}
+
+.book-title {
+  font-size: 2.8rem;
+  color: #ff9edf;
+  text-shadow: 0 0 10px #ff00c8;
+  margin-bottom: 10px;
+}
+
+.book-subtext {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 0, 200, 0.3);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Audiowide", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff00c8;
+  box-shadow: 0 0 10px #ff00c8;
+  outline: none;
+}
+
+.book-btn {
+  background: linear-gradient(90deg, #ff00c8, #ff6ae0);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background: linear-gradient(90deg, #ff6ae0, #ff00c8);
+  box-shadow: 0 0 25px #ff00c8;
+  transform: scale(1.05);
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .book-container {
+    padding: 40px 25px;
+  }
+
+  .book-title {
+    font-size: 2.2rem;
+  }
+
+  .book-subtext {
+    font-size: 0.95rem;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+}

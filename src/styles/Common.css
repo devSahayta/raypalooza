@@ -1,0 +1,82 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Audiowide", sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* ========== GLOBAL SECTIONS ========== */
+section {
+  padding: 100px 8%;
+  position: relative;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1,
+h2,
+h3 {
+  color: #f5b5d1;
+  letter-spacing: 1px;
+  font-family: "Audiowide", sans-serif;
+}
+
+p {
+  color: #aaaaaa;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* ========== BUTTON STYLES ========== */
+.primary-btn {
+  background: transparent;
+  border: 2px solid #f5b5d1;
+  color: #f5b5d1;
+  padding: 12px 36px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, #f5b5d1, #ff8ecb);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(245, 181, 209, 0.5);
+}
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+  font-size: 2.5 rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5b5d1;
+  text-transform: uppercase;
+  font-family: "Audiowide", sans-serif;
+}
+
+.section-subtext {
+  text-align: center;
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* ========== GRADIENT TEXT (OPTIONAL) ========== */
+.gradient-text {
+  background: linear-gradient(90deg, #f5b5d1, #ff8ecb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

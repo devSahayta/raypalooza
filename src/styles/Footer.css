@@ -1,0 +1,31 @@
+.footer-section {
+  background: #000;
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid rgba(245, 181, 209, 0.2);
+}
+
+.footer-content {
+  color: #fff;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  color: #f5b5d1;
+  letter-spacing: 2px;
+}
+
+.footer-content p {
+  margin-top: 15px;
+  color: #bbb;
+}
+
+.footer-content .highlight {
+  color: #ff8ecb;
+}
+
+.footer-content p:last-child {
+  margin-top: 25px;
+  color: #777;
+  font-size: 0.9rem;
+}
