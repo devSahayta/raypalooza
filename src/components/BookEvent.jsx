@@ -23,7 +23,7 @@ export default function BookEvent() {
   };
 
   return (
-    <section className="book-event" id="book-event">
+    <section className="book-event" id="contact">
       <motion.div
         className="book-container"
         initial={{ opacity: 0, y: 40 }}
@@ -32,7 +32,8 @@ export default function BookEvent() {
       >
         <h2 className="book-title">Book Your Event</h2>
         <p className="book-subtext">
-          Let&rsquo;s make your celebration unforgettable! Fill in your details below.
+          Let&rsquo;s make your celebration unforgettable! Fill in your details
+          below.
         </p>
 
         <form className="book-form" onSubmit={handleSubmit}>
