@@ -1,7 +1,7 @@
 /* ========== GLOBAL RESET ========== */
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ section {
 h1,
 h2,
 h3 {
-  color: #f5b5d1;
+  color: var(--color-brand-pink);
   letter-spacing: 1px;
   font-family: "Audiowide", sans-serif;
 }
@@ -37,21 +37,27 @@ p {
 
 /* ========== BUTTON STYLES ========== */
 .primary-btn {
+  display: inline-block;
   background: transparent;
-  border: 2px solid #f5b5d1;
-  color: #f5b5d1;
+  border: 2px solid var(--color-brand-pink);
+  color: var(--color-brand-pink);
   padding: 12px 36px;
   font-weight: 600;
   border-radius: 50px;
+  text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .primary-btn:hover {
-  background: linear-gradient(90deg, #f5b5d1, #ff8ecb);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-pink),
+    var(--color-brand-pink-deep)
+  );
   color: #000;
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(245, 181, 209, 0.5);
+  box-shadow: 0 0 20px rgba(252, 214, 227, 0.5);
 }
 
 /* ========== SECTION TITLE ========== */
@@ -60,7 +66,7 @@ p {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
-  color: #f5b5d1;
+  color: var(--color-brand-pink);
   text-transform: uppercase;
   font-family: "Audiowide", sans-serif;
 }
@@ -76,7 +82,11 @@ p {
 
 /* ========== GRADIENT TEXT (OPTIONAL) ========== */
 .gradient-text {
-  background: linear-gradient(90deg, #f5b5d1, #ff8ecb);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-pink),
+    var(--color-brand-pink-deep)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

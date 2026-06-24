@@ -1,5 +1,6 @@
 import "./globals.css";
 import "@/styles/Common.css";
+import Particles from "@/components/Particles";
 
 export const metadata = {
   title: "Ray Palooza | Events and Marketing",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700;900&display=swap"
         />
+        <Particles />
         {children}
       </body>
     </html>

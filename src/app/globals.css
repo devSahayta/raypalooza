@@ -1,3 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #fcd6e3;
+  --color-brand-pink-mid: #f7b3d2;
+  --color-brand-pink-deep: #ee93bf;
+  --color-brand-gold: #f5c542;
+}
+
 /* reset */
 * {
   box-sizing: border-box;
@@ -40,5 +49,53 @@ body {
   .snake-item {
     min-width: 240px;
     height: 160px;
+  }
+}
+
+/* ambient particles */
+@keyframes particle-drift {
+  0% {
+    transform: translateY(0);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(var(--drift, -80px));
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.15;
+  }
+}
+
+@keyframes particle-twinkle-rotate {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: rotate(0deg) scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg) scale(1.15);
+  }
+}
+
+.particle-dot {
+  animation-name: particle-drift;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.particle-star {
+  animation-name: particle-twinkle-rotate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle-dot,
+  .particle-star {
+    animation: none;
+    opacity: 0.35;
   }
 }

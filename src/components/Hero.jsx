@@ -51,7 +51,12 @@ export default function Hero() {
         <p className="hero-subtitle">
           Events and Marketing — where imagination meets innovation.
         </p>
-        <button className="hero-btn">Explore Events</button>
+        <button
+          className="hero-btn"
+          onClick={() => (window.location.href = "#events")}
+        >
+          Explore Events
+        </button>
       </motion.div>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import "@/styles/Header.css";
 
 export default function Header() {
@@ -11,9 +12,9 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <div className="logo">
-          <a href="#hero">
-            <img src="/1.png" alt="RAY PALOOZA" />
-          </a>
+          <Link href="/">
+            <img src="/logo.png" alt="RAY PALOOZA" />
+          </Link>
         </div>
 
         <div
@@ -31,23 +32,23 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          {["Home", "About", "Services", "Gallery", "Testimonials", "Contact"].map(
+          {["Home", "About", "Journey", "Services", "Events", "Contact"].map(
             (item, index) => (
               <motion.a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={item === "Home" ? "#hero" : `#${item.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
                 whileHover={{
                   scale: 1.1,
-                  color: "#ff00ff",
-                  textShadow: "0 0 8px #ff00ff",
+                  color: "#fcd6e3",
+                  textShadow: "0 0 8px #fcd6e3",
                 }}
                 transition={{ type: "spring", stiffness: 200 }}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 {item}
               </motion.a>
-            )
+            ),
           )}
         </motion.nav>
       </div>

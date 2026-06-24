@@ -86,7 +86,7 @@ export default function BookEvent() {
             className="book-btn"
             whileHover={{
               scale: 1.1,
-              boxShadow: "0 0 20px #ff00c8",
+              boxShadow: "0 0 20px #ee93bf",
             }}
           >
             Send Message

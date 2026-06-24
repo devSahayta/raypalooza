@@ -10,23 +10,23 @@
   max-width: 700px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 0, 200, 0.3);
+  border: 1px solid rgba(252, 214, 227, 0.3);
   border-radius: 20px;
   padding: 50px 40px;
-  box-shadow: 0 0 30px rgba(255, 0, 200, 0.15);
+  box-shadow: 0 0 30px rgba(252, 214, 227, 0.15);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
 }
 
 .book-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 40px rgba(255, 0, 200, 0.3);
+  box-shadow: 0 0 40px rgba(252, 214, 227, 0.3);
 }
 
 .book-title {
   font-size: 2.8rem;
-  color: #ff9edf;
-  text-shadow: 0 0 10px #ff00c8;
+  color: #fcd6e3;
+  text-shadow: 0 0 10px #ee93bf;
   margin-bottom: 10px;
 }
 
@@ -46,7 +46,7 @@
 .form-group textarea {
   width: 100%;
   padding: 14px 18px;
-  border: 1px solid rgba(255, 0, 200, 0.3);
+  border: 1px solid rgba(252, 214, 227, 0.3);
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 10px;
@@ -57,14 +57,14 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #ff00c8;
-  box-shadow: 0 0 10px #ff00c8;
+  border-color: #ee93bf;
+  box-shadow: 0 0 10px #ee93bf;
   outline: none;
 }
 
 .book-btn {
-  background: linear-gradient(90deg, #ff00c8, #ff6ae0);
-  color: #fff;
+  background: linear-gradient(90deg, #ee93bf, #fcd6e3);
+  color: #000;
   border: none;
   padding: 14px 40px;
   font-size: 1rem;
@@ -76,8 +76,8 @@
 }
 
 .book-btn:hover {
-  background: linear-gradient(90deg, #ff6ae0, #ff00c8);
-  box-shadow: 0 0 25px #ff00c8;
+  background: linear-gradient(90deg, #fcd6e3, #ee93bf);
+  box-shadow: 0 0 25px #ee93bf;
   transform: scale(1.05);
 }
 
