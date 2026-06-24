@@ -32,7 +32,15 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          {["Home", "About", "Journey", "Services", "Events", "Contact"].map(
+          {[
+            "Home",
+            "About",
+            "Journey",
+            "Services",
+            "Events",
+            "Partnerships",
+            "Contact",
+          ].map(
             (item, index) => (
               <motion.a
                 key={item}

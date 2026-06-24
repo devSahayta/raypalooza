@@ -5,6 +5,7 @@ import Journey from "@/components/Journey";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Events from "@/components/Events";
+import MarketingPartnerships from "@/components/MarketingPartnerships";
 import BookEvent from "@/components/BookEvent";
 import Footer from "@/components/Footer";
 
@@ -17,8 +18,9 @@ export default function Home() {
         <AboutUs />
         <Journey />
         <WhatWeDo />
-        <WhyChooseUs />
         <Events />
+        <MarketingPartnerships />
+        <WhyChooseUs />
         <BookEvent />
       </main>
       <Footer />

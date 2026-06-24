@@ -84,6 +84,17 @@ export default function Footer() {
       <p className="mt-12 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} RAY PALOOZA. All Rights Reserved.
       </p>
+      <p className="mt-2 text-center text-sm text-gray-500">
+        Developed by{" "}
+        <a
+          href="https://sahayta.co.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold transition hover:text-brand-pink"
+        >
+          Sahayta
+        </a>
+      </p>
     </footer>
   );
 }
