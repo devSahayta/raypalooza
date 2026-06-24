@@ -29,7 +29,7 @@ export default function Footer() {
           <p className="mt-4 text-gray-400">
             Events and Marketing — where imagination meets innovation.
           </p>
-          <p className="mt-3 max-w-full wrap-break-word font-semibold text-brand-gold">
+          <p className="mt-3 max-w-full wrap-break-word font-semibold text-brand-pink-deep">
             #Curating
             <wbr />
             Events

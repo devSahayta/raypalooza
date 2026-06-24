@@ -52,7 +52,7 @@
     filter: drop-shadow(0 0 20px rgba(252, 214, 227, 0.35));
   }
   50% {
-    filter: drop-shadow(0 0 35px rgba(245, 197, 66, 0.5));
+    filter: drop-shadow(0 0 35px rgba(238, 147, 191, 0.55));
   }
 }
 
@@ -67,7 +67,7 @@
   font-size: clamp(0.85rem, 4.2vw, 1.15rem);
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #f5c542;
+  color: #ee93bf;
   overflow-wrap: anywhere;
   word-break: break-word;
 }

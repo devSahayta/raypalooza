@@ -7,12 +7,12 @@ export default function SectionHeading({
   eyebrow,
   title,
   subtitle,
-  gradient = "from-brand-pink via-white to-brand-gold",
+  gradient = "from-brand-pink via-white to-brand-pink-deep",
 }) {
   return (
     <div className="relative z-10 mx-auto mb-14 max-w-2xl text-center">
       <motion.div
-        className="mb-4 flex items-center justify-center gap-3 text-brand-gold"
+        className="mb-4 flex items-center justify-center gap-3 text-brand-pink-deep"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

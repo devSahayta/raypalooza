@@ -18,7 +18,7 @@
 }
 
 .highlight {
-  color: #f5c542;
+  color: #ee93bf;
   font-weight: 700;
 }
 
@@ -26,7 +26,7 @@
   display: block;
   margin: 0 auto 30px;
   max-width: 100%;
-  color: #f5c542;
+  color: #ee93bf;
   font-weight: 700;
   font-size: clamp(0.8rem, 4vw, 1rem);
   letter-spacing: 0.5px;

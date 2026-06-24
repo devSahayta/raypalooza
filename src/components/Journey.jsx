@@ -63,14 +63,14 @@ export default function Journey() {
       id="journey"
       className="relative overflow-hidden bg-black px-[8%] py-24 text-center"
     >
-      <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-pink-deep/10 blur-3xl" />
       {/* <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-brand-pink/20 blur-3xl" /> */}
 
       <SectionHeading
         eyebrow="Our Story"
         title="Our Journey"
         subtitle="Every event is a story — here's a glimpse of where RayPalooza has been."
-        gradient="from-brand-gold via-white to-brand-pink"
+        gradient="from-brand-pink-deep via-white to-brand-pink"
       />
 
       <div

@@ -8,12 +8,12 @@ export default function AboutUs() {
   return (
     <section className="aboutus-section relative overflow-hidden" id="about">
       <div className="pointer-events-none absolute -left-24 -top-24 h-60 w-60 rounded-full bg-brand-pink/20 blur-3xl" />
-      {/* <div className="pointer-events-none absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-brand-gold/10 blur-3xl" /> */}
+      {/* <div className="pointer-events-none absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-brand-pink-deep/10 blur-3xl" /> */}
 
       <SectionHeading
         eyebrow="Who We Are"
         title="About Us"
-        gradient="from-brand-pink via-white to-brand-gold"
+        gradient="from-brand-pink via-white to-brand-pink-deep"
       />
 
       <motion.p

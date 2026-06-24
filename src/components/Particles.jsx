@@ -27,7 +27,7 @@ const dots = Array.from({ length: DOT_COUNT }, (_, i) => {
     delay: seeded(base + 5) * -duration,
     drift: 60 + seeded(base + 6) * 100,
     color:
-      colorRoll < 0.45 ? "#fcd6e3" : colorRoll < 0.8 ? "#f5c542" : "#ffffff",
+      colorRoll < 0.45 ? "#fcd6e3" : colorRoll < 0.8 ? "#ee93bf" : "#ffffff",
   };
 });
 
@@ -40,7 +40,7 @@ const stars = Array.from({ length: STAR_COUNT }, (_, i) => {
     size: 10 + seeded(base + 4) * 10,
     duration,
     delay: seeded(base + 5) * -duration,
-    color: seeded(base + 6) < 0.5 ? "#fcd6e3" : "#f5c542",
+    color: seeded(base + 6) < 0.5 ? "#fcd6e3" : "#ee93bf",
   };
 });
 

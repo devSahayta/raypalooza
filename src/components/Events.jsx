@@ -43,13 +43,13 @@ export default function Events() {
       className="relative overflow-hidden bg-black px-[8%] py-24 text-center"
     >
       {/* <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-brand-pink/20 blur-3xl" /> */}
-      <div className="pointer-events-none absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-brand-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-brand-pink-deep/10 blur-3xl" />
 
       <SectionHeading
         eyebrow="Our Work"
         title="Our Events"
         subtitle="A glimpse into the events we've curated — click a card for more details."
-        gradient="from-brand-pink via-white to-brand-gold"
+        gradient="from-brand-pink via-white to-brand-pink-deep"
       />
 
       <div className="relative z-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -121,7 +121,7 @@ export default function Events() {
                 <h3 className="mb-2 text-2xl font-bold text-brand-pink">
                   {selected.title}
                 </h3>
-                <p className="mb-4 text-sm uppercase tracking-wide text-brand-gold">
+                <p className="mb-4 text-sm uppercase tracking-wide text-brand-pink-deep">
                   {selected.location}
                 </p>
                 <p className="text-gray-300">{selected.description}</p>

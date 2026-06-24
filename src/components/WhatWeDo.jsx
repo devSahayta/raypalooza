@@ -45,10 +45,10 @@ export default function WhatWeDo() {
     >
       {/* decorative background glows */}
       <div className="pointer-events-none absolute -left-40 -top-40 sm:-left-24 sm:-top-24 h-80 w-80 rounded-full bg-brand-pink/20 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-40 -right-40 sm:-bottom-24 sm:-right-24 h-96 w-96 rounded-full bg-brand-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 sm:-bottom-24 sm:-right-24 h-96 w-96 rounded-full bg-brand-pink-deep/10 blur-3xl" />
 
       <motion.div
-        className="relative z-10 mx-auto mb-4 flex items-center justify-center gap-3 text-brand-gold"
+        className="relative z-10 mx-auto mb-4 flex items-center justify-center gap-3 text-brand-pink-deep"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -61,7 +61,7 @@ export default function WhatWeDo() {
       </motion.div>
 
       <motion.h2
-        className="section-title relative z-10 inline-block bg-linear-to-r from-brand-pink via-white to-brand-gold bg-clip-text text-transparent!"
+        className="section-title relative z-10 inline-block bg-linear-to-r from-brand-pink via-white to-brand-pink-deep bg-clip-text text-transparent!"
         initial={{ opacity: 0, y: 30, scale: 0.96 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -97,7 +97,7 @@ export default function WhatWeDo() {
 
                 {/* icon badge with rotating glow ring */}
                 <div className="relative mb-6 flex h-16 w-16 items-center justify-center">
-                  <span className="absolute inset-0 animate-spin rounded-full bg-[conic-gradient(from_0deg,#fcd6e3,#f5c542,#fcd6e3)] opacity-60 blur-md [animation-duration:6s]" />
+                  <span className="absolute inset-0 animate-spin rounded-full bg-[conic-gradient(from_0deg,#fcd6e3,#ee93bf,#fcd6e3)] opacity-60 blur-md [animation-duration:6s]" />
                   <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#0a0a0a]">
                     <Icon className="h-7 w-7 text-brand-pink" />
                   </span>
@@ -110,7 +110,7 @@ export default function WhatWeDo() {
                 <ul className="relative space-y-3">
                   {category.items.map((item) => (
                     <li key={item} className="flex gap-2 text-gray-300">
-                      <Sparkle className="mt-1 h-4 w-4 shrink-0 text-brand-gold" />
+                      <Sparkle className="mt-1 h-4 w-4 shrink-0 text-brand-pink-deep" />
                       <span>{item}</span>
                     </li>
                   ))}

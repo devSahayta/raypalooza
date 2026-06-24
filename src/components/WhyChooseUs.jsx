@@ -39,11 +39,11 @@ export default function WhyChooseUs() {
       className="relative overflow-hidden bg-black px-[8%] py-24 text-center"
     >
       {/* decorative background glows — mirrored from What We Do for rhythm */}
-      <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-pink-deep/10 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-48 -left-48 sm:-bottom-24 sm:-left-24 h-80 w-80 rounded-full bg-brand-pink/20 blur-3xl" />
 
       <motion.div
-        className="relative z-10 mx-auto mb-4 flex items-center justify-center gap-3 text-brand-gold"
+        className="relative z-10 mx-auto mb-4 flex items-center justify-center gap-3 text-brand-pink-deep"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
       </motion.div>
 
       <motion.h2
-        className="section-title relative z-10 inline-block bg-linear-to-r from-brand-gold via-white to-brand-pink bg-clip-text text-transparent!"
+        className="section-title relative z-10 inline-block bg-linear-to-r from-brand-pink-deep via-white to-brand-pink bg-clip-text text-transparent!"
         initial={{ opacity: 0, y: 30, scale: 0.96 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -85,15 +85,15 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.12, duration: 0.6 }}
             >
-              <TiltCard className="group relative flex h-full items-start gap-5 overflow-hidden rounded-2xl border border-brand-pink/30 bg-white/5 p-7 text-left shadow-[0_0_20px_rgba(252,214,227,0.1)] transition-shadow duration-300 hover:shadow-[0_0_35px_rgba(245,197,66,0.35)]">
+              <TiltCard className="group relative flex h-full items-start gap-5 overflow-hidden rounded-2xl border border-brand-pink/30 bg-white/5 p-7 text-left shadow-[0_0_20px_rgba(252,214,227,0.1)] transition-shadow duration-300 hover:shadow-[0_0_35px_rgba(238,147,191,0.35)]">
                 <span className="pointer-events-none absolute -bottom-6 -right-2 select-none font-[Orbitron] text-7xl font-black text-white/5">
                   0{index + 1}
                 </span>
 
                 <div className="relative flex h-14 w-14 shrink-0 items-center justify-center">
-                  <span className="absolute inset-0 animate-spin rounded-full bg-[conic-gradient(from_0deg,#f5c542,#fcd6e3,#f5c542)] opacity-60 blur-md [animation-duration:7s]" />
+                  <span className="absolute inset-0 animate-spin rounded-full bg-[conic-gradient(from_0deg,#ee93bf,#fcd6e3,#ee93bf)] opacity-60 blur-md [animation-duration:7s]" />
                   <span className="relative flex h-12 w-12 items-center justify-center rounded-full bg-[#0a0a0a]">
-                    <Icon className="h-6 w-6 text-brand-gold" />
+                    <Icon className="h-6 w-6 text-brand-pink-deep" />
                   </span>
                 </div>
 
