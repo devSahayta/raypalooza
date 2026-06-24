@@ -2,14 +2,14 @@
   background: linear-gradient(to bottom, #000, #0a0a0a);
   text-align: center;
   padding: 120px 10%;
-  font-family: Audiowide, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .section-title {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 .aboutus-text {
   color: #bbb;
-  font-family: Audiowide, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
 
   line-height: 1.8;
@@ -25,8 +25,11 @@
 .aboutus-hashtag {
   display: block;
   margin: 0 auto 30px;
+  max-width: 100%;
   color: #f5c542;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 4vw, 1rem);
   letter-spacing: 0.5px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }

@@ -47,7 +47,13 @@ export default function AboutUs() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
-        #CuratingEventsAmplifyingBrands
+        #Curating
+        <wbr />
+        Events
+        <wbr />
+        Amplifying
+        <wbr />
+        Brands
       </motion.span>
 
       <a href="#services" className="primary-btn relative z-10">

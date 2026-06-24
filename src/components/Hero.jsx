@@ -21,6 +21,10 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        <h1 className="sr-only">
+          RayPalooza — Events and Brand Marketing Company
+        </h1>
+
         <motion.img
           src="/logo-transparentbg.png"
           alt="Ray Palooza"

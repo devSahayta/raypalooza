@@ -41,6 +41,7 @@
 .hero-logo {
   width: clamp(220px, 60vw, 420px);
   height: auto;
+  margin-inline: auto;
   filter: drop-shadow(0 0 25px rgba(252, 214, 227, 0.45));
   animation: hero-logo-glow 4s ease-in-out infinite;
 }
