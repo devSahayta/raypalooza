@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "@/styles/Bookevent.css";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xnjkjqej";
+
 export default function BookEvent() {
   const [formData, setFormData] = useState({
     name: "",
@@ -11,15 +13,35 @@ export default function BookEvent() {
     event: "",
     message: "",
   });
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Your event details have been submitted successfully!");
-    setFormData({ name: "", email: "", event: "", message: "" });
+    setStatus("sending");
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", event: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -84,13 +106,27 @@ export default function BookEvent() {
           <motion.button
             type="submit"
             className="book-btn"
+            disabled={status === "sending"}
             whileHover={{
               scale: 1.1,
               boxShadow: "0 0 20px #ee93bf",
             }}
           >
-            Send Message
+            {status === "sending" ? "Sending..." : "Send Message"}
           </motion.button>
+
+          {status === "success" && (
+            <p className="rounded-lg border border-brand-pink/40 bg-brand-pink/10 px-4 py-3 text-sm font-semibold text-brand-pink">
+              Thanks! Your event details have been sent — we&rsquo;ll be in
+              touch soon.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm font-semibold text-red-400">
+              Something went wrong. Please try again or reach us directly at
+              +91 80920 90090.
+            </p>
+          )}
         </form>
       </motion.div>
     </section>

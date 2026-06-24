@@ -21,36 +21,30 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <motion.h1
-          className="hero-title"
-          initial="hidden"
-          whileInView="visible"
-          variants={{
-            visible: { transition: { staggerChildren: 0.08 } },
-          }}
-        >
-          {"RAY PALOOZA".split("").map((char, index) => (
-            <motion.span
-              key={index}
-              variants={{
-                hidden: { opacity: 0, y: 40, rotateX: 90 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  rotateX: 0,
-                  transition: { duration: 0.6, ease: "easeOut" },
-                },
-              }}
-              className="split-char"
-            >
-              {char === " " ? " " : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+        <motion.img
+          src="/logo-transparentbg.png"
+          alt="Ray Palooza"
+          className="hero-logo"
+          initial={{ opacity: 0, scale: 0.85, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        />
 
-        <p className="hero-subtitle">
-          Events and Marketing — where imagination meets innovation.
-        </p>
+        <motion.p
+          className="hero-hashtag"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          #Curating
+          <wbr />
+          Events
+          <wbr />
+          Amplifying
+          <wbr />
+          Brands
+        </motion.p>
+
         <button
           className="hero-btn"
           onClick={() => (window.location.href = "#events")}

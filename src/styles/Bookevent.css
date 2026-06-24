@@ -81,6 +81,12 @@
   transform: scale(1.05);
 }
 
+.book-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
 /* 🌐 Responsive Design */
 @media (max-width: 768px) {
   .book-container {
