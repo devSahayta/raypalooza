@@ -11,8 +11,8 @@ const partnerships = [
     title: "Rameo Lane",
     location: "Ranchi",
     images: [
-      "/images/marketing_and_partnerships/Rameo Lane, Ranchi/RL RANCHI DHYAN POST.webp",
-      "/images/marketing_and_partnerships/Rameo Lane, Ranchi/RL RANCHI Sat EVENT 25 Apr.webp",
+      "/images/marketing-and-partnerships/rameo-lane-ranchi/RL RANCHI DHYAN POST.webp",
+      "/images/marketing-and-partnerships/rameo-lane-ranchi/RL RANCHI Sat EVENT 25 Apr.webp",
     ],
   },
   {
@@ -20,8 +20,8 @@ const partnerships = [
     title: "The Ruin House",
     location: "Ranchi",
     images: [
-      "/images/marketing_and_partnerships/The Ruin House, Ranchi/IMG_8905.webp",
-      "/images/marketing_and_partnerships/The Ruin House, Ranchi/IMG_8911.webp",
+      "/images/marketing-and-partnerships/the-ruin-house-ranchi/IMG_8905.webp",
+      "/images/marketing-and-partnerships/the-ruin-house-ranchi/IMG_8911.webp",
     ],
   },
 ];
@@ -39,7 +39,7 @@ export default function MarketingPartnerships() {
     (next) => {
       setSlideIndex((next + selected.images.length) % selected.images.length);
     },
-    [selected]
+    [selected],
   );
 
   useEffect(() => {
