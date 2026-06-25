@@ -6,31 +6,31 @@ import SectionHeading from "./SectionHeading";
 
 const slides = [
   {
-    src: "/images/journey/journey-1.png",
+    src: "/images/journey/journey-1.webp",
     alt: "Every event is a story — here's ours. Crafting vibes that stay with you.",
   },
   {
-    src: "/images/journey/journey-2.png",
+    src: "/images/journey/journey-2.webp",
     alt: "Sounds backed by beatmakers — a few of the many amazing DJs we've had the chance to work with.",
   },
   {
-    src: "/images/journey/journey-3.png",
+    src: "/images/journey/journey-3.webp",
     alt: "Artists we've worked with — amazing DJs we've had the chance to work with.",
   },
   {
-    src: "/images/journey/journey-4.png",
+    src: "/images/journey/journey-4.webp",
     alt: "Marketing that brings impact.",
   },
   {
-    src: "/images/journey/journey-5.png",
+    src: "/images/journey/journey-5.webp",
     alt: "Brand presence for clients who wanted more than just posts.",
   },
   {
-    src: "/images/journey/journey-6.png",
+    src: "/images/journey/journey-6.webp",
     alt: "Places we've hosted events — from rooftops to basements, each space brought a different energy.",
   },
   {
-    src: "/images/journey/journey-7.png",
+    src: "/images/journey/journey-7.webp",
     alt: "We've just gotten started, let's build your next unforgettable vibe!",
   },
 ];

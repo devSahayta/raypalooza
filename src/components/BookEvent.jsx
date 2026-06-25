@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "@/styles/Bookevent.css";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xnjkjqej";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdvgjjp";
 
 export default function BookEvent() {
   const [formData, setFormData] = useState({
@@ -123,8 +123,8 @@ export default function BookEvent() {
           )}
           {status === "error" && (
             <p className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm font-semibold text-red-400">
-              Something went wrong. Please try again or reach us directly at
-              +91 80920 90090.
+              Something went wrong. Please try again or reach us directly at +91
+              80920 90090.
             </p>
           )}
         </form>
