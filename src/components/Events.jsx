@@ -10,8 +10,10 @@ const events = [
   {
     id: 1,
     title: "Akshay Tritiya",
-    venue: "Saraswaan Jewellers",
+    venue: "Saraswaan Jewellers, Ranchi",
     date: "2026-04-19",
+    placeholderImage:
+      "/images/events/Akshay Tritiya @Saraswaan Jewellers/IMG_4866.webp",
     images: [
       "/images/events/Akshay Tritiya @Saraswaan Jewellers/IMG_4863.webp",
       "/images/events/Akshay Tritiya @Saraswaan Jewellers/IMG_4864.webp",
@@ -25,8 +27,10 @@ const events = [
   {
     id: 2,
     title: "Rabab And Nake",
-    venue: "The Ruin House",
+    venue: "The Ruin House, Ranchi",
     date: "2026-05-30",
+    placeholderImage:
+      "/images/events/Rabab And Nake @ The Ruin House/IMG_7813.webp",
     images: [
       "/images/events/Rabab And Nake @ The Ruin House/IMG_7409.webp",
       "/images/events/Rabab And Nake @ The Ruin House/IMG_7410.webp",
@@ -112,7 +116,7 @@ export default function Events() {
 
       <SectionHeading
         eyebrow="Our Work"
-        title="Our Events"
+        title="Events"
         subtitle="A glimpse into the events we've curated — click a card for more details."
         gradient="from-brand-pink via-white to-brand-pink-deep"
       />
@@ -130,7 +134,7 @@ export default function Events() {
           >
             <div className="aspect-4/3 overflow-hidden">
               <img
-                src={event.images[0]}
+                src={event.placeholderImage || event.images[0]}
                 alt={event.title}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-75"
               />
