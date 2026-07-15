@@ -6,6 +6,7 @@ import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Events from "@/components/Events";
 import MarketingPartnerships from "@/components/MarketingPartnerships";
+import Testimonials from "@/components/Testimonials";
 import BookEvent from "@/components/BookEvent";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Events />
         <MarketingPartnerships />
         <WhyChooseUs />
+        <Testimonials />
         <BookEvent />
       </main>
       <Footer />
