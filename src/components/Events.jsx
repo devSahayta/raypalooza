@@ -64,6 +64,28 @@ const events = [
       "/images/events/rabab-and-nake-the-ruin-house/IMG_7921.webp",
     ],
   },
+  {
+    id: 3,
+    title: "SICKFLIP",
+    venue: "Ranchi",
+    date: "2026-09-26",
+    placeholderImage: "/images/events/sickflip/IMG_3005.webp",
+    images: [
+      "/images/events/sickflip/IMG_3005.webp",
+      "/images/events/sickflip/IMG_3006.webp",
+      "/images/events/sickflip/IMG_3007.webp",
+      "/images/events/sickflip/IMG_3008.webp",
+      "/images/events/sickflip/IMG_3009.webp",
+      "/images/events/sickflip/IMG_3010.webp",
+      "/images/events/sickflip/IMG_3011.webp",
+      "/images/events/sickflip/IMG_3012.webp",
+      "/images/events/sickflip/IMG_3013.webp",
+      "/images/events/sickflip/IMG_3014.webp",
+      "/images/events/sickflip/IMG_3015.webp",
+      "/images/events/sickflip/IMG_3016.webp",
+      "/images/events/sickflip/IMG_3017.webp",
+    ],
+  },
 ];
 
 function formatEventDate(dateStr) {
