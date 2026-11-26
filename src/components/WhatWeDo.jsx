@@ -20,6 +20,7 @@ const categories = [
       "Corporate Celebrations & Networking Events",
       "Engagements, Birthdays & Themed Gatherings",
       "Luxury Weddings & Private Celebrations",
+      "Artist Booking & Management for All Events",
     ],
   },
   {
